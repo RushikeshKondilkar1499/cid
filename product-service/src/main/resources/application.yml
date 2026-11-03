@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: product-service
+  datasource:
+    url: jdbc:mysql://localhost:3307/productdb
+    username: ${DB_USERNAME:mysql}
+    password: ${DB_PASSWORD:mysql}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+server:
+  port: 8081
